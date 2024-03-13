@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tafelbild2pdf"
+version = "0.1.0"
+description = "Segment and optimize whiteboard and blackboard photos for printing .pdf-Files."
+authors = ["Bernhard Bauke <bernhardb16@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+opencv-python = "^4.9.0.80"
+flask = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

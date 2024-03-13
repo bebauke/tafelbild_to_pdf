@@ -1,0 +1,75 @@
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #bddab1;
+    margin: 0;
+    padding: 0;
+}
+
+div#results {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
+ul#result-list {
+    list-style: none;
+    padding: 0;
+}
+
+div#results ul#result-list li {
+    margin: 3px;
+    list-style: none;
+    padding: 6px 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+
+}
+
+div#results span {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    margin: 3px 3px 12px 3px;
+    padding: 6px 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    min-width: 18%;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 70vw;
+    height: 100vh;
+}
+
+iframe {
+    border: none; /* Remove the default border */
+    width: 100%;
+    height: 99vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mapboxgl-ctrl-group {
+        position: relative;
+        width: 90%;
+        min-height: auto;
+        margin: 10px auto;
+    }
+    
+    .map {
+        height: 80vh;
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+}
